@@ -6,13 +6,22 @@ import { Helmet } from "react-helmet-async";
 import Footer from "../component/Footer";
 import "../css/home.css";
 
+// This is the counter component
+// It uses the useReducer hook to manage the state
+// It uses the Reducer function to manage the state
+// It uses the ACTIONS object to perform the actions on the state
+// It uses the Helmet component to manage the head of the document
+// It uses the useRef hook to manage the input field
+// Counter is a function that returns the JSX
 const Counter = () => {
+  // useRef is used to manage the input field
   const InputRef = useRef();
 
   const Decrement = () => {
     if (Initialstate.count === 0) {
       return;
     }
+    // dispatch is used to perform the action on the state
     dispatch({ type: ACTIONS.DECREMENT });
   };
   const Increment = () => {

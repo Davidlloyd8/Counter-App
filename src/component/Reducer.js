@@ -1,9 +1,12 @@
+// This is the reducer file for the counter component
+// ACTIONS is an object that contains the actions that can be performed on the state
 export const ACTIONS = {
   INCREMENT: "INCREMENT",
   DECREMENT: "DECREMENT",
   RESET: "RESET",
   SETVALUE: "SETVALUE",
 };
+// Reducer is a function that takes in the state and the action to be performed on the state
 const Reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.INCREMENT:
