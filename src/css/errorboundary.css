@@ -1,9 +1,15 @@
 .error-box  {
     margin: 0 auto;
     width: 500px;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .toggle {
-    margin: 50px;
     width: 100%;
     padding: 15px;
     border-radius: 12px;

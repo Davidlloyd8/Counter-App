@@ -2,6 +2,7 @@ import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Link } from "react-router-dom";
 import "../css/errorboundary.css";
+import Navigaton from "../component/Navigation";
 import {Helmet} from "react-helmet-async"
 
 function ErrorFallback({ error, resetErrorBoundary }) {
@@ -34,7 +35,9 @@ function ErrorBoundaryPage() {
         <link ref="canonical" href="/errorBoundary" />
       </Helmet>
 
+      <Navigaton />
       <div className="error-box">
+        <h1>Error Boundary</h1>
         <button onClick={() => setExplode((e) => !e)} className="toggle">
           Click Here
         </button>
