@@ -5,7 +5,7 @@ function ErrorPage() {
     <div className="error">
       <div class="mainbox">
         <div class="err">4</div>
-        <i class="fa fa-question-circle fa-spin"></i>
+        <i class="fa fa-question-circle fa-spin rolling-icon"></i>
         <div class="err2">4</div>
         <div class="msg">
           Maybe this page moved? Got deleted? Is hiding out in quarantine? Never

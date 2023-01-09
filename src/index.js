@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    {/* helmet is used to manage the head of the document */}
       <HelmetProvider>
         <App />
       </HelmetProvider>

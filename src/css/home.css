@@ -1,10 +1,14 @@
 .container {
     width: 500px;
     margin: 0 auto;
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
 }
 .box_value {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .box_value h1 {
@@ -33,13 +37,17 @@
     text-align: center;
 }
 .reset button {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border-radius: 12px;
     background-color: aliceblue;
     color: #333;
     font-size: 23px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+.input-section {
+    width: 100%;
 }
 .input-field {
     width: 50%;
@@ -62,3 +70,27 @@
     font-size: 18px;
     font-weight: 500;
 }
+button {
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .input-field {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .input-section button {
+        width: 100%;
+    }
+}
+    
+
+    

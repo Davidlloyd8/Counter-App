@@ -10,9 +10,9 @@ const Counter = () => {
   const InputRef = useRef();
 
   const Decrement = () => {
-    if(Initialstate.count===0 ){
-        return
-      }
+    if (Initialstate.count === 0) {
+      return;
+    }
     dispatch({ type: ACTIONS.DECREMENT });
   };
   const Increment = () => {
@@ -37,7 +37,7 @@ const Counter = () => {
     <>
       <Helmet>
         <title>Counter App</title>
-        <meta name="description" content="displays our counterApp component" />
+        <meta name="description" content="A counter app" />
         <link ref="canonical" href="/" />
       </Helmet>
 
